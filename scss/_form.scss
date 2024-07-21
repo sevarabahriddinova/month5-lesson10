@@ -38,4 +38,20 @@ h2{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     background-color: rgba(218, 212, 32, 0.221)
 }
+.form__save{
+    padding: 10px 0px;
+    width: 140px;
+    border-radius: 20px;
+    align-items: center;
+    outline: none;
+    border: none;
+    margin-left: 4px;
+}
+.form__save:active{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid  #73ff00d7 ;
+    background-color: #73ff00d7 ;
+    
+}
+
  

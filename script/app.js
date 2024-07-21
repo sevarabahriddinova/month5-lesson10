@@ -6,9 +6,10 @@
 
 const $products=document.querySelector("#products");
 const $createForm=document.querySelector("#createForm");
-const $updateForm=document.querySelector("#updateForm")
-const $inputs=$createForm.querySelectorAll(".inputElement")
-const $updateInputs=$updateForm.querySelectorAll(".inputElement")
+const $updateForm=document.querySelector("#updateForm");
+const $inputs=$createForm.querySelectorAll(".inputElement");
+const $updateInputs=$updateForm.querySelectorAll(".inputElement");
+
 
 function loadData(){
     
@@ -116,8 +117,20 @@ const handleFillUpdateForm=(e)=>{
        })
 
     }
-}
 
+    if(e.target.classList.contains("delete")){
+        console.log("salom delete")
+        const id=e.target.dataset.productId;
+        const userAgree= confirm("Are you sure to delete this product?");
+        if(userAgree){
+            fetch(`https://6662ac4162966e20ef097175.mockapi.io/api/products/products/${id}`, {method:"DELETE"})
+
+            .then(response=>response.json())
+            .then(data =>console.log(data))    
+        }
+    }
+    
+}
 $createForm.addEventListener("submit", handleCreateNewProduct)
 $updateForm.addEventListener("submit",handleUpdateProduct)
 $products.addEventListener("click",handleFillUpdateForm)
