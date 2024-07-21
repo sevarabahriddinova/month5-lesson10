@@ -1,0 +1,120 @@
+@import "./reset";
+@import "./form";
+@import "./navbar";
+body{
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    font-family: sans-serif;
+}
+.container{
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__img{
+   background-color: red($color: #000000);
+}
+img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
+.card__img{
+    height: 200px;
+    border-radius: 6px;
+    margin:0 20px;
+  
+}
+.card__wrapper{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00dade42 0%, hwb(299 0% 0% / 0.114) 100%);
+    box-shadow: hsla(249, 59%, 11%, 0.149) 0px 48px 100px 0px;   
+    position: relative;
+    z-index: 1;
+    background-color: #ff00002a;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 30px;
+}
+ #products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 22px;
+}
+.update__delete{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.delete{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 0;
+    background-color: #ff00007b;
+    border-radius: 30px;
+    border: none;
+    text-transform: lowercase;
+   
+}
+.delete:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid  #ff0000d7;
+    background-color: #ff0000d7 ;
+    
+}
+.delete:active{
+    transform: scale(0.9);
+    background-color: #00ffff;
+}
+.update{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 0;
+    background-color:rgba(255, 217, 0, 0.521);
+    border-radius: 30px;
+    border: none;
+    text-transform: lowercase;   
+}
+.update:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid  gold;
+    background-color: gold;
+    
+}
+.update:active{
+    transform: scale(0.9);
+    background-color: #00ffff;
+}
+
+p{
+    background-color: #4159d000;
+    background-image: linear-gradient(43deg, #4159d07d 0%, #c850c0bc 46%, #ffcd70b3 100%);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;    
+    position: absolute;
+    z-index: 9;
+    display: none;
+    height:350px;
+    width: 250px;
+    text-align: center;
+    padding: 24px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+ }
+h3{
+    
+    font-size: 18px;
+    font-weight: 600;
+}
+
