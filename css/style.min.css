@@ -288,6 +288,41 @@ h2 {
     color: #00ff9d;
   }
 }
+.box {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+.box:hover input {
+  width: 300px;
+}
+
+.box input {
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  background: transparent;
+}
+
+.box a .fas {
+  color: #11ddaa;
+  font-size: 18px;
+}
+
 body {
   background-color: #D9AFD9;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#D9AFD9), to(#97D9E1));
@@ -355,6 +390,11 @@ img:hover {
   width: 300px;
   padding: 20px;
   border-radius: 30px;
+}
+
+.card__wrapper:hover {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 #products {
