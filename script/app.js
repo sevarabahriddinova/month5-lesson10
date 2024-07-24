@@ -27,7 +27,7 @@ const renderProducts=(products)=>{
         $div.innerHTML=`
             <div class="card__wrapper">
                 <div class="card__img">
-                    <img width="300" src="${product.image}"/>     
+                    <image width="300" src="${product.image}"/>     
                 </div>
                         <h3>${product.title}</h3>
                         <strong>$${product.price}</strong>
@@ -49,7 +49,7 @@ const handleCreateNewProduct =(e)=>{
     const values=Array.from($inputs).map(input=>input.value)
     let product={
         title:values[0],
-        img:values[1],
+        image:values[1],
         price:values[2],
         description:values[3]
     }
@@ -78,7 +78,7 @@ const handleUpdateProduct=(e)=>{
         const values=Array.from($updateInputs).map(input=>input.value)
         let product={
             title:values[0],
-            img:values[1],
+            image:values[1],
             price:values[2],
             description:values[3]
         }
@@ -97,9 +97,6 @@ const handleUpdateProduct=(e)=>{
     .then(data => {
         window.location.reload()
     })
-
-    
-
 }
 
 const handleFillUpdateForm=(e)=>{
@@ -117,7 +114,7 @@ const handleFillUpdateForm=(e)=>{
        })
 
     }
-
+    
     if(e.target.classList.contains("delete")){
         console.log("salom delete")
         const id=e.target.dataset.productId;
@@ -128,6 +125,7 @@ const handleFillUpdateForm=(e)=>{
             .then(response=>response.json())
             .then(data =>console.log(data))    
         }
+         
     }
     
 }
